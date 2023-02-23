@@ -25,8 +25,8 @@ if place:
             st.plotly_chart(figure)  # figure object(data visualization libraries: plotly and bokeh)
 
         if option == "Sky":
-            images = {"Clear": "Weather Forecast/images/clear.png", "Clouds": "Weather Forecast/images/cloud.png",
-                  "Rain": "Weather Forecast/images/rain.png", "Snow": "Weather Forecast/images/snow.png"}
+            images = {"Clear": "images/clear.png", "Clouds": "images/cloud.png",
+                  "Rain": "images/rain.png", "Snow": "images/snow.png"}
             sky_conditions = [dict["weather"][0]["main"] for dict in filtered_data]
             #translating the data
             image_paths = [images[condition] for condition in sky_conditions]
