@@ -1,5 +1,5 @@
 import requests
-from api import API_KEY
+import api
 
 
 
